@@ -1,0 +1,907 @@
+% Template for PHENIX Physics Paper submission to PRL or PRC or PRD
+%
+%      [Modified by Brant to include PRD on May 21, 2004]
+%      [Modified by Brant to include simple PRL length check on July 22, 2004]
+%
+%    template4.tex for RevTeX4 (highly preferred over RevTeX3)
+%
+% Please ask Brant <brant@bnl.gov>, if you have any questions
+% about the preparation of your draft.  
+%
+%   Copyright (c) 2001 The American Physical Society.
+%
+% This is a template for producing manuscripts for use with REVTEX 4.0
+% Copy this file to another name and then work on that file.
+% That way, you always have this original template file to use or
+% retrieve a fresh copy from:
+% https://www.phenix.bnl.gov/phenix/WWW//p/info/dp/000/template
+%
+% To produce single column, double-spaced printout for review
+% and for length check, use the "preprint" style:
+
+% For Phys. Rev. Lett. choose (uncomment) one of:
+\documentclass[aps,prl,superscriptaddress,showpacs,floatfix,twocolumn]{revtex4}
+%\documentclass[aps,prl,superscriptaddress,showpacs,endfloats,preprint]{revtex4}
+
+% For Phys. Rev. C choose (uncomment) one of:
+%\documentclass[aps,prc,superscriptaddress,showpacs,nofootinbib,floatfix,twocolumn]{revtex4}
+%\documentclass[aps,prc,superscriptaddress,showpacs,nofootinbib,floatfix,preprint]{revtex4}
+
+% For Phys. Rev. D choose (uncomment) one of:
+%\documentclass[aps,prd,superscriptaddress,showpacs,nofootinbib,floatfix,twocolumn]{revtex4}
+%\documentclass[aps,prd,superscriptaddress,showpacs,nofootinbib,floatfix,preprint]{revtex4}
+
+% To use the \includegraphics package we usually use:
+\usepackage{graphicx}	% Include figure files
+
+% Other packages are also available; for example:
+% \usepackage{dcolumn}	% Align table columns on decimal point
+% \usepackage{bm}	% bold math
+
+% The text is assumed to average 88 characters per line.
+% The contribution of text to the total length is calculated as
+% Text-lines = Number-of-88-character lines * (88/55).
+% [Note:  If one word spills over onto the next line in preprint
+%         format, that contributes 1.6 lines to length estimate!]
+
+% It is recommended to use BibTeX and apsrev.bst for references
+% Choosing a journal automatically selects the correct APS
+% BibTeX style file (bst file), so only uncomment the line
+% below if necessary.
+%\bibliographystyle{apsrev}
+
+\begin{document}
+
+%Title of paper
+\title{Single Electrons from Heavy Flavor Decays in p+p Collisions 
+at $\sqrt{s} = 200$~GeV}
+
+\newcommand{\abilene}{Abilene Christian University, Abilene, TX 79699, USA}
+\newcommand{\acadsin}{Institute of Physics, Academia Sinica, Taipei 11529, Taiwan}
+\newcommand{\banaras}{Department of Physics, Banaras Hindu University, Varanasi 221005, India}
+\newcommand{\barc}{Bhabha Atomic Research Centre, Bombay 400 085, India}
+\newcommand{\bnl}{Brookhaven National Laboratory, Upton, NY 11973-5000, USA}
+\newcommand{\caucr}{University of California - Riverside, Riverside, CA 92521, USA}
+\newcommand{\ciae}{China Institute of Atomic Energy (CIAE), Beijing, People's Republic of China}
+\newcommand{\cns}{Center for Nuclear Study, Graduate School of Science, University of Tokyo, 7-3-1 Hongo, Bunkyo, Tokyo 113-0033, Japan}
+\newcommand{\columbia}{Columbia University, New York, NY 10027 and Nevis Laboratories, Irvington, NY 10533, USA}
+\newcommand{\dapnia}{Dapnia, CEA Saclay, F-91191, Gif-sur-Yvette, France}
+\newcommand{\debrecen}{Debrecen University, H-4010 Debrecen, Egyetem t{\'e}r 1, Hungary}
+\newcommand{\fsu}{Florida State University, Tallahassee, FL 32306, USA}
+\newcommand{\gsu}{Georgia State University, Atlanta, GA 30303, USA}
+\newcommand{\hiroshima}{Hiroshima University, Kagamiyama, Higashi-Hiroshima 739-8526, Japan}
+\newcommand{\ihepprot}{IHEP Protvino, State Research Center of Russian Federation, Institute for High Energy Physics, Protvino, 142281, Russia}
+\newcommand{\isu}{Iowa State University, Ames, IA 50011, USA}
+\newcommand{\jinrdubna}{Joint Institute for Nuclear Research, 141980 Dubna, Moscow Region, Russia}
+\newcommand{\kaeri}{KAERI, Cyclotron Application Laboratory, Seoul, South Korea}
+\newcommand{\kangnung}{Kangnung National University, Kangnung 210-702, South Korea}
+\newcommand{\kek}{KEK, High Energy Accelerator Research Organization, Tsukuba, Ibaraki 305-0801, Japan}
+\newcommand{\kfki}{KFKI Research Institute for Particle and Nuclear Physics of the Hungarian Academy of Sciences (MTA KFKI RMKI), H-1525 Budapest 114, POBox 49, Budapest, Hungary}
+\newcommand{\korea}{Korea University, Seoul, 136-701, Korea}
+\newcommand{\kurchatov}{Russian Research Center ``Kurchatov Institute", Moscow, Russia}
+\newcommand{\kyoto}{Kyoto University, Kyoto 606-8502, Japan}
+\newcommand{\labllr}{Laboratoire Leprince-Ringuet, Ecole Polytechnique, CNRS-IN2P3, Route de Saclay, F-91128, Palaiseau, France}
+\newcommand{\lawllnl}{Lawrence Livermore National Laboratory, Livermore, CA 94550, USA}
+\newcommand{\losalamos}{Los Alamos National Laboratory, Los Alamos, NM 87545, USA}
+\newcommand{\lpc}{LPC, Universit{\'e} Blaise Pascal, CNRS-IN2P3, Clermont-Fd, 63177 Aubiere Cedex, France}
+\newcommand{\lund}{Department of Physics, Lund University, Box 118, SE-221 00 Lund, Sweden}
+\newcommand{\muenster}{Institut f\"ur Kernphysik, University of Muenster, D-48149 Muenster, Germany}
+\newcommand{\myongji}{Myongji University, Yongin, Kyonggido 449-728, Korea}
+\newcommand{\nagasaki}{Nagasaki Institute of Applied Science, Nagasaki-shi, Nagasaki 851-0193, Japan}
+\newcommand{\newmex}{University of New Mexico, Albuquerque, NM 87131, USA}
+\newcommand{\nmsu}{New Mexico State University, Las Cruces, NM 88003, USA}
+\newcommand{\ornl}{Oak Ridge National Laboratory, Oak Ridge, TN 37831, USA}
+\newcommand{\orsay}{IPN-Orsay, Universite Paris Sud, CNRS-IN2P3, BP1, F-91406, Orsay, France}
+\newcommand{\pnpi}{PNPI, Petersburg Nuclear Physics Institute, Gatchina,  Leningrad region, 188300, Russia}
+\newcommand{\riken}{RIKEN, The Institute of Physical and Chemical Research, Wako, Saitama 351-0198, Japan}
+\newcommand{\rikjrbrc}{RIKEN BNL Research Center, Brookhaven National Laboratory, Upton, NY 11973-5000, USA}
+\newcommand{\saispbstu}{Saint Petersburg State Polytechnic University, St. Petersburg, Russia}
+\newcommand{\saopaulo}{Universidade de S{\~a}o Paulo, Instituto de F\'{\i}sica, Caixa Postal 66318, S{\~a}o Paulo CEP05315-970, Brazil}
+\newcommand{\seoulnat}{System Electronics Laboratory, Seoul National University, Seoul, South Korea}
+\newcommand{\stonybrkc}{Chemistry Department, Stony Brook University, SUNY, Stony Brook, NY 11794-3400, USA}
+\newcommand{\stonycrkp}{Department of Physics and Astronomy, Stony Brook University, SUNY, Stony Brook, NY 11794, USA}
+\newcommand{\subatech}{SUBATECH (Ecole des Mines de Nantes, CNRS-IN2P3, Universit{\'e} de Nantes) BP 20722 - 44307, Nantes, France}
+\newcommand{\tenn}{University of Tennessee, Knoxville, TN 37996, USA}
+\newcommand{\titech}{Department of Physics, Tokyo Institute of Technology, Tokyo, 152-8551, Japan}
+\newcommand{\tsukuba}{Institute of Physics, University of Tsukuba, Tsukuba, Ibaraki 305, Japan}
+\newcommand{\vandy}{Vanderbilt University, Nashville, TN 37235, USA}
+\newcommand{\waseda}{Waseda University, Advanced Research Institute for Science and Engineering, 17 Kikui-cho, Shinjuku-ku, Tokyo 162-0044, Japan}
+\newcommand{\weizmann}{Weizmann Institute, Rehovot 76100, Israel}
+\newcommand{\yonsei}{Yonsei University, IPAP, Seoul 120-749, Korea}
+\affiliation{\abilene}
+\affiliation{\acadsin}
+\affiliation{\banaras}
+\affiliation{\barc}
+\affiliation{\bnl}
+\affiliation{\caucr}
+\affiliation{\ciae}
+\affiliation{\cns}
+\affiliation{\columbia}
+\affiliation{\dapnia}
+\affiliation{\debrecen}
+\affiliation{\fsu}
+\affiliation{\gsu}
+\affiliation{\hiroshima}
+\affiliation{\ihepprot}
+\affiliation{\isu}
+\affiliation{\jinrdubna}
+\affiliation{\kaeri}
+\affiliation{\kangnung}
+\affiliation{\kek}
+\affiliation{\kfki}
+\affiliation{\korea}
+\affiliation{\kurchatov}
+\affiliation{\kyoto}
+\affiliation{\labllr}
+\affiliation{\lawllnl}
+\affiliation{\losalamos}
+\affiliation{\lpc}
+\affiliation{\lund}
+\affiliation{\muenster}
+\affiliation{\myongji}
+\affiliation{\nagasaki}
+\affiliation{\newmex}
+\affiliation{\nmsu}
+\affiliation{\ornl}
+\affiliation{\orsay}
+\affiliation{\pnpi}
+\affiliation{\riken}
+\affiliation{\rikjrbrc}
+\affiliation{\saispbstu}
+\affiliation{\saopaulo}
+\affiliation{\seoulnat}
+\affiliation{\stonybrkc}
+\affiliation{\stonycrkp}
+\affiliation{\subatech}
+\affiliation{\tenn}
+\affiliation{\titech}
+\affiliation{\tsukuba}
+\affiliation{\vandy}
+\affiliation{\waseda}
+\affiliation{\weizmann}
+\affiliation{\yonsei}
+\author{S.S.~Adler}	\affiliation{\bnl}
+\author{S.~Afanasiev}	\affiliation{\jinrdubna}
+\author{C.~Aidala}	\affiliation{\bnl}
+\author{N.N.~Ajitanand}	\affiliation{\stonybrkc}
+\author{Y.~Akiba}	\affiliation{\kek} \affiliation{\riken}
+\author{J.~Alexander}	\affiliation{\stonybrkc}
+\author{R.~Amirikas}	\affiliation{\fsu}
+\author{L.~Aphecetche}	\affiliation{\subatech}
+\author{S.H.~Aronson}	\affiliation{\bnl}
+\author{R.~Averbeck}	\affiliation{\stonycrkp}
+\author{T.C.~Awes}	\affiliation{\ornl}
+\author{R.~Azmoun}	\affiliation{\stonycrkp}
+\author{V.~Babintsev}	\affiliation{\ihepprot}
+\author{A.~Baldisseri}	\affiliation{\dapnia}
+\author{K.N.~Barish}	\affiliation{\caucr}
+\author{P.D.~Barnes}	\affiliation{\losalamos}
+\author{B.~Bassalleck}	\affiliation{\newmex}
+\author{S.~Bathe}	\affiliation{\muenster}
+\author{S.~Batsouli}	\affiliation{\columbia}
+\author{V.~Baublis}	\affiliation{\pnpi}
+\author{A.~Bazilevsky}	\affiliation{\rikjrbrc} \affiliation{\ihepprot}
+\author{S.~Belikov}	\affiliation{\isu} \affiliation{\ihepprot}
+\author{Y.~Berdnikov}	\affiliation{\saispbstu}
+\author{S.~Bhagavatula}	\affiliation{\isu}
+\author{J.G.~Boissevain}	\affiliation{\losalamos}
+\author{H.~Borel}	\affiliation{\dapnia}
+\author{S.~Borenstein}	\affiliation{\labllr}
+\author{M.L.~Brooks}	\affiliation{\losalamos}
+\author{D.S.~Brown}	\affiliation{\nmsu}
+\author{N.~Bruner}	\affiliation{\newmex}
+\author{D.~Bucher}	\affiliation{\muenster}
+\author{H.~Buesching}	\affiliation{\muenster}
+\author{V.~Bumazhnov}	\affiliation{\ihepprot}
+\author{G.~Bunce}	\affiliation{\bnl} \affiliation{\rikjrbrc}
+\author{J.M.~Burward-Hoy}	\affiliation{\lawllnl} \affiliation{\stonycrkp}
+\author{S.~Butsyk}	\affiliation{\stonycrkp}
+\author{X.~Camard}	\affiliation{\subatech}
+\author{J.-S.~Chai}	\affiliation{\kaeri}
+\author{P.~Chand}	\affiliation{\barc}
+\author{W.C.~Chang}	\affiliation{\acadsin}
+\author{S.~Chernichenko}	\affiliation{\ihepprot}
+\author{C.Y.~Chi}	\affiliation{\columbia}
+\author{J.~Chiba}	\affiliation{\kek}
+\author{M.~Chiu}	\affiliation{\columbia}
+\author{I.J.~Choi}	\affiliation{\yonsei}
+\author{J.~Choi}	\affiliation{\kangnung}
+\author{R.K.~Choudhury}	\affiliation{\barc}
+\author{T.~Chujo}	\affiliation{\bnl}
+\author{V.~Cianciolo}	\affiliation{\ornl}
+\author{Y.~Cobigo}	\affiliation{\dapnia}
+\author{B.A.~Cole}	\affiliation{\columbia}
+\author{P.~Constantin}	\affiliation{\isu}
+\author{D.~d'Enterria}	\affiliation{\subatech}
+\author{G.~David}	\affiliation{\bnl}
+\author{H.~Delagrange}	\affiliation{\subatech}
+\author{A.~Denisov}	\affiliation{\ihepprot}
+\author{A.~Deshpande}	\affiliation{\rikjrbrc}
+\author{E.J.~Desmond}	\affiliation{\bnl}
+\author{A.~Devismes}	\affiliation{\stonycrkp}
+\author{O.~Dietzsch}	\affiliation{\saopaulo}
+\author{O.~Drapier}	\affiliation{\labllr}
+\author{A.~Drees}	\affiliation{\stonycrkp}
+\author{R.~du~Rietz}	\affiliation{\lund}
+\author{A.~Durum}	\affiliation{\ihepprot}
+\author{D.~Dutta}	\affiliation{\barc}
+\author{Y.V.~Efremenko}	\affiliation{\ornl}
+\author{K.~El~Chenawi}	\affiliation{\vandy}
+\author{A.~Enokizono}	\affiliation{\hiroshima}
+\author{H.~En'yo}	\affiliation{\riken} \affiliation{\rikjrbrc}
+\author{S.~Esumi}	\affiliation{\tsukuba}
+\author{L.~Ewell}	\affiliation{\bnl}
+\author{D.E.~Fields}	\affiliation{\newmex} \affiliation{\rikjrbrc}
+\author{F.~Fleuret}	\affiliation{\labllr}
+\author{S.L.~Fokin}	\affiliation{\kurchatov}
+\author{B.D.~Fox}	\affiliation{\rikjrbrc}
+\author{Z.~Fraenkel}	\affiliation{\weizmann}
+\author{J.E.~Frantz}	\affiliation{\columbia}
+\author{A.~Franz}	\affiliation{\bnl}
+\author{A.D.~Frawley}	\affiliation{\fsu}
+\author{S.-Y.~Fung}	\affiliation{\caucr}
+\author{S.~Garpman}   \altaffiliation{Deceased}  \affiliation{\lund}
+\author{T.K.~Ghosh}	\affiliation{\vandy}
+\author{A.~Glenn}	\affiliation{\tenn}
+\author{G.~Gogiberidze}	\affiliation{\tenn}
+\author{M.~Gonin}	\affiliation{\labllr}
+\author{J.~Gosset}	\affiliation{\dapnia}
+\author{Y.~Goto}	\affiliation{\rikjrbrc}
+\author{R.~Granier~de~Cassagnac}	\affiliation{\labllr}
+\author{N.~Grau}	\affiliation{\isu}
+\author{S.V.~Greene}	\affiliation{\vandy}
+\author{M.~Grosse~Perdekamp}	\affiliation{\rikjrbrc}
+\author{W.~Guryn}	\affiliation{\bnl}
+\author{H.-{\AA}.~Gustafsson}	\affiliation{\lund}
+\author{T.~Hachiya}	\affiliation{\hiroshima}
+\author{J.S.~Haggerty}	\affiliation{\bnl}
+\author{H.~Hamagaki}	\affiliation{\cns}
+\author{A.G.~Hansen}	\affiliation{\losalamos}
+\author{E.P.~Hartouni}	\affiliation{\lawllnl}
+\author{M.~Harvey}	\affiliation{\bnl}
+\author{R.~Hayano}	\affiliation{\cns}
+\author{N.~Hayashi}	\affiliation{\riken}
+\author{X.~He}	\affiliation{\gsu}
+\author{M.~Heffner}	\affiliation{\lawllnl}
+\author{T.K.~Hemmick}	\affiliation{\stonycrkp}
+\author{J.M.~Heuser}	\affiliation{\stonycrkp}
+\author{M.~Hibino}	\affiliation{\waseda}
+\author{J.C.~Hill}	\affiliation{\isu}
+\author{W.~Holzmann}	\affiliation{\stonybrkc}
+\author{K.~Homma}	\affiliation{\hiroshima}
+\author{B.~Hong}	\affiliation{\korea}
+\author{A.~Hoover}	\affiliation{\nmsu}
+\author{T.~Ichihara}	\affiliation{\riken} \affiliation{\rikjrbrc}
+\author{V.V.~Ikonnikov}	\affiliation{\kurchatov}
+\author{K.~Imai}	\affiliation{\kyoto} \affiliation{\riken}
+\author{D.~Isenhower}	\affiliation{\abilene}
+\author{M.~Ishihara}	\affiliation{\riken}
+\author{M.~Issah}	\affiliation{\stonybrkc}
+\author{A.~Isupov}	\affiliation{\jinrdubna}
+\author{B.V.~Jacak}	\affiliation{\stonycrkp}
+\author{W.Y.~Jang}	\affiliation{\korea}
+\author{Y.~Jeong}	\affiliation{\kangnung}
+\author{J.~Jia}	\affiliation{\stonycrkp}
+\author{O.~Jinnouchi}	\affiliation{\riken}
+\author{B.M.~Johnson}	\affiliation{\bnl}
+\author{S.C.~Johnson}	\affiliation{\lawllnl}
+\author{K.S.~Joo}	\affiliation{\myongji}
+\author{D.~Jouan}	\affiliation{\orsay}
+\author{S.~Kametani}	\affiliation{\cns} \affiliation{\waseda}
+\author{N.~Kamihara}	\affiliation{\titech} \affiliation{\riken}
+\author{J.H.~Kang}	\affiliation{\yonsei}
+\author{S.S.~Kapoor}	\affiliation{\barc}
+\author{K.~Katou}	\affiliation{\waseda}
+\author{S.~Kelly}	\affiliation{\columbia}
+\author{B.~Khachaturov}	\affiliation{\weizmann}
+\author{A.~Khanzadeev}	\affiliation{\pnpi}
+\author{J.~Kikuchi}	\affiliation{\waseda}
+\author{D.H.~Kim}	\affiliation{\myongji}
+\author{D.J.~Kim}	\affiliation{\yonsei}
+\author{D.W.~Kim}	\affiliation{\kangnung}
+\author{E.~Kim}	\affiliation{\seoulnat}
+\author{G.-B.~Kim}	\affiliation{\labllr}
+\author{H.J.~Kim}	\affiliation{\yonsei}
+\author{E.~Kistenev}	\affiliation{\bnl}
+\author{A.~Kiyomichi}	\affiliation{\tsukuba}
+\author{K.~Kiyoyama}	\affiliation{\nagasaki}
+\author{C.~Klein-Boesing}	\affiliation{\muenster}
+\author{H.~Kobayashi}	\affiliation{\riken} \affiliation{\rikjrbrc}
+\author{L.~Kochenda}	\affiliation{\pnpi}
+\author{V.~Kochetkov}	\affiliation{\ihepprot}
+\author{D.~Koehler}	\affiliation{\newmex}
+\author{T.~Kohama}	\affiliation{\hiroshima}
+\author{M.~Kopytine}	\affiliation{\stonycrkp}
+\author{D.~Kotchetkov}	\affiliation{\caucr}
+\author{A.~Kozlov}	\affiliation{\weizmann}
+\author{P.J.~Kroon}	\affiliation{\bnl}
+\author{C.H.~Kuberg}	\affiliation{\abilene} \affiliation{\losalamos}
+\author{K.~Kurita}	\affiliation{\rikjrbrc}
+\author{Y.~Kuroki}	\affiliation{\tsukuba}
+\author{M.J.~Kweon}	\affiliation{\korea}
+\author{Y.~Kwon}	\affiliation{\yonsei}
+\author{G.S.~Kyle}	\affiliation{\nmsu}
+\author{R.~Lacey}	\affiliation{\stonybrkc}
+\author{V.~Ladygin}	\affiliation{\jinrdubna}
+\author{J.G.~Lajoie}	\affiliation{\isu}
+\author{A.~Lebedev}	\affiliation{\isu} \affiliation{\kurchatov}
+\author{S.~Leckey}	\affiliation{\stonycrkp}
+\author{D.M.~Lee}	\affiliation{\losalamos}
+\author{S.~Lee}	\affiliation{\kangnung}
+\author{M.J.~Leitch}	\affiliation{\losalamos}
+\author{X.H.~Li}	\affiliation{\caucr}
+\author{H.~Lim}	\affiliation{\seoulnat}
+\author{A.~Litvinenko}	\affiliation{\jinrdubna}
+\author{M.X.~Liu}	\affiliation{\losalamos}
+\author{Y.~Liu}	\affiliation{\orsay}
+\author{C.F.~Maguire}	\affiliation{\vandy}
+\author{Y.I.~Makdisi}	\affiliation{\bnl}
+\author{A.~Malakhov}	\affiliation{\jinrdubna}
+\author{V.I.~Manko}	\affiliation{\kurchatov}
+\author{Y.~Mao}	\affiliation{\ciae} \affiliation{\riken}
+\author{G.~Martinez}	\affiliation{\subatech}
+\author{M.D.~Marx}	\affiliation{\stonycrkp}
+\author{H.~Masui}	\affiliation{\tsukuba}
+\author{F.~Matathias}	\affiliation{\stonycrkp}
+\author{T.~Matsumoto}	\affiliation{\cns} \affiliation{\waseda}
+\author{P.L.~McGaughey}	\affiliation{\losalamos}
+\author{E.~Melnikov}	\affiliation{\ihepprot}
+\author{F.~Messer}	\affiliation{\stonycrkp}
+\author{Y.~Miake}	\affiliation{\tsukuba}
+\author{J.~Milan}	\affiliation{\stonybrkc}
+\author{T.E.~Miller}	\affiliation{\vandy}
+\author{A.~Milov}	\affiliation{\stonycrkp} \affiliation{\weizmann}
+\author{S.~Mioduszewski}	\affiliation{\bnl}
+\author{R.E.~Mischke}	\affiliation{\losalamos}
+\author{G.C.~Mishra}	\affiliation{\gsu}
+\author{J.T.~Mitchell}	\affiliation{\bnl}
+\author{A.K.~Mohanty}	\affiliation{\barc}
+\author{D.P.~Morrison}	\affiliation{\bnl}
+\author{J.M.~Moss}	\affiliation{\losalamos}
+\author{F.~M{\"u}hlbacher}	\affiliation{\stonycrkp}
+\author{D.~Mukhopadhyay}	\affiliation{\weizmann}
+\author{M.~Muniruzzaman}	\affiliation{\caucr}
+\author{J.~Murata}	\affiliation{\riken} \affiliation{\rikjrbrc}
+\author{S.~Nagamiya}	\affiliation{\kek}
+\author{J.L.~Nagle}	\affiliation{\columbia}
+\author{T.~Nakamura}	\affiliation{\hiroshima}
+\author{B.K.~Nandi}	\affiliation{\caucr}
+\author{M.~Nara}	\affiliation{\tsukuba}
+\author{J.~Newby}	\affiliation{\tenn}
+\author{P.~Nilsson}	\affiliation{\lund}
+\author{A.S.~Nyanin}	\affiliation{\kurchatov}
+\author{J.~Nystrand}	\affiliation{\lund}
+\author{E.~O'Brien}	\affiliation{\bnl}
+\author{C.A.~Ogilvie}	\affiliation{\isu}
+\author{H.~Ohnishi}	\affiliation{\bnl} \affiliation{\riken}
+\author{I.D.~Ojha}	\affiliation{\vandy} \affiliation{\banaras}
+\author{K.~Okada}	\affiliation{\riken}
+\author{M.~Ono}	\affiliation{\tsukuba}
+\author{V.~Onuchin}	\affiliation{\ihepprot}
+\author{A.~Oskarsson}	\affiliation{\lund}
+\author{I.~Otterlund}	\affiliation{\lund}
+\author{K.~Oyama}	\affiliation{\cns}
+\author{K.~Ozawa}	\affiliation{\cns}
+\author{D.~Pal}	\affiliation{\weizmann}
+\author{A.P.T.~Palounek}	\affiliation{\losalamos}
+\author{V.~Pantuev}	\affiliation{\stonycrkp}
+\author{V.~Papavassiliou}	\affiliation{\nmsu}
+\author{J.~Park}	\affiliation{\seoulnat}
+\author{A.~Parmar}	\affiliation{\newmex}
+\author{S.F.~Pate}	\affiliation{\nmsu}
+\author{T.~Peitzmann}	\affiliation{\muenster}
+\author{J.-C.~Peng}	\affiliation{\losalamos}
+\author{V.~Peresedov}	\affiliation{\jinrdubna}
+\author{C.~Pinkenburg}	\affiliation{\bnl}
+\author{R.P.~Pisani}	\affiliation{\bnl}
+\author{F.~Plasil}	\affiliation{\ornl}
+\author{M.L.~Purschke}	\affiliation{\bnl}
+\author{A.K.~Purwar}	\affiliation{\stonycrkp}
+\author{J.~Rak}	\affiliation{\isu}
+\author{I.~Ravinovich}	\affiliation{\weizmann}
+\author{K.F.~Read}	\affiliation{\ornl} \affiliation{\tenn}
+\author{M.~Reuter}	\affiliation{\stonycrkp}
+\author{K.~Reygers}	\affiliation{\muenster}
+\author{V.~Riabov}	\affiliation{\pnpi} \affiliation{\saispbstu}
+\author{Y.~Riabov}	\affiliation{\pnpi}
+\author{G.~Roche}	\affiliation{\lpc}
+\author{A.~Romana}	\affiliation{\labllr}
+\author{M.~Rosati}	\affiliation{\isu}
+\author{P.~Rosnet}	\affiliation{\lpc}
+\author{S.S.~Ryu}	\affiliation{\yonsei}
+\author{M.E.~Sadler}	\affiliation{\abilene}
+\author{N.~Saito}	\affiliation{\riken} \affiliation{\rikjrbrc}
+\author{T.~Sakaguchi}	\affiliation{\cns} \affiliation{\waseda}
+\author{M.~Sakai}	\affiliation{\nagasaki}
+\author{S.~Sakai}	\affiliation{\tsukuba}
+\author{V.~Samsonov}	\affiliation{\pnpi}
+\author{L.~Sanfratello}	\affiliation{\newmex}
+\author{R.~Santo}	\affiliation{\muenster}
+\author{H.D.~Sato}	\affiliation{\kyoto} \affiliation{\riken}
+\author{S.~Sato}	\affiliation{\bnl} \affiliation{\tsukuba}
+\author{S.~Sawada}	\affiliation{\kek}
+\author{Y.~Schutz}	\affiliation{\subatech}
+\author{V.~Semenov}	\affiliation{\ihepprot}
+\author{R.~Seto}	\affiliation{\caucr}
+\author{M.R.~Shaw}	\affiliation{\abilene} \affiliation{\losalamos}
+\author{T.K.~Shea}	\affiliation{\bnl}
+\author{T.-A.~Shibata}	\affiliation{\titech} \affiliation{\riken}
+\author{K.~Shigaki}	\affiliation{\hiroshima} \affiliation{\kek}
+\author{T.~Shiina}	\affiliation{\losalamos}
+\author{C.L.~Silva}	\affiliation{\saopaulo}
+\author{D.~Silvermyr}	\affiliation{\losalamos} \affiliation{\lund}
+\author{K.S.~Sim}	\affiliation{\korea}
+\author{C.P.~Singh}	\affiliation{\banaras}
+\author{V.~Singh}	\affiliation{\banaras}
+\author{M.~Sivertz}	\affiliation{\bnl}
+\author{A.~Soldatov}	\affiliation{\ihepprot}
+\author{R.A.~Soltz}	\affiliation{\lawllnl}
+\author{W.E.~Sondheim}	\affiliation{\losalamos}
+\author{S.P.~Sorensen}	\affiliation{\tenn}
+\author{I.V.~Sourikova}	\affiliation{\bnl}
+\author{F.~Staley}	\affiliation{\dapnia}
+\author{P.W.~Stankus}	\affiliation{\ornl}
+\author{E.~Stenlund}	\affiliation{\lund}
+\author{M.~Stepanov}	\affiliation{\nmsu}
+\author{A.~Ster}	\affiliation{\kfki}
+\author{S.P.~Stoll}	\affiliation{\bnl}
+\author{T.~Sugitate}	\affiliation{\hiroshima}
+\author{J.P.~Sullivan}	\affiliation{\losalamos}
+\author{E.M.~Takagui}	\affiliation{\saopaulo}
+\author{A.~Taketani}	\affiliation{\riken} \affiliation{\rikjrbrc}
+\author{M.~Tamai}	\affiliation{\waseda}
+\author{K.H.~Tanaka}	\affiliation{\kek}
+\author{Y.~Tanaka}	\affiliation{\nagasaki}
+\author{K.~Tanida}	\affiliation{\riken}
+\author{M.J.~Tannenbaum}	\affiliation{\bnl}
+\author{P.~Tarj{\'a}n}	\affiliation{\debrecen}
+\author{J.D.~Tepe}	\affiliation{\abilene} \affiliation{\losalamos}
+\author{T.L.~Thomas}	\affiliation{\newmex}
+\author{J.~Tojo}	\affiliation{\kyoto} \affiliation{\riken}
+\author{H.~Torii}	\affiliation{\kyoto} \affiliation{\riken}
+\author{R.S.~Towell}	\affiliation{\abilene}
+\author{I.~Tserruya}	\affiliation{\weizmann}
+\author{H.~Tsuruoka}	\affiliation{\tsukuba}
+\author{S.K.~Tuli}	\affiliation{\banaras}
+\author{H.~Tydesj{\"o}}	\affiliation{\lund}
+\author{N.~Tyurin}	\affiliation{\ihepprot}
+\author{H.W.~van~Hecke}	\affiliation{\losalamos}
+\author{J.~Velkovska}	\affiliation{\bnl} \affiliation{\stonycrkp}
+\author{M.~Velkovsky}	\affiliation{\stonycrkp}
+\author{V.~Veszpr{\'e}mi}	\affiliation{\debrecen}
+\author{L.~Villatte}	\affiliation{\tenn}
+\author{A.A.~Vinogradov}	\affiliation{\kurchatov}
+\author{M.A.~Volkov}	\affiliation{\kurchatov}
+\author{E.~Vznuzdaev}	\affiliation{\pnpi}
+\author{X.R.~Wang}	\affiliation{\gsu}
+\author{Y.~Watanabe}	\affiliation{\riken} \affiliation{\rikjrbrc}
+\author{S.N.~White}	\affiliation{\bnl}
+\author{F.K.~Wohn}	\affiliation{\isu}
+\author{C.L.~Woody}	\affiliation{\bnl}
+\author{W.~Xie}	\affiliation{\caucr}
+\author{Y.~Yang}	\affiliation{\ciae}
+\author{A.~Yanovich}	\affiliation{\ihepprot}
+\author{S.~Yokkaichi}	\affiliation{\riken} \affiliation{\rikjrbrc}
+\author{G.R.~Young}	\affiliation{\ornl}
+\author{I.E.~Yushmanov}	\affiliation{\kurchatov}
+\author{W.A.~Zajc}\email[PHENIX Spokesperson:]{zajc@nevis.columbia.edu}	\affiliation{\columbia}
+\author{C.~Zhang}	\affiliation{\columbia}
+\author{S.~Zhou}	\affiliation{\ciae}
+\author{S.J.~Zhou}	\affiliation{\weizmann}
+\author{L.~Zolin}	\affiliation{\jinrdubna}
+\collaboration{PHENIX Collaboration} \noaffiliation
+
+\date{\today}
+
+\begin{abstract}
+The invariant differential cross section for inclusive electron production in
+$p + p$ collisions at $\sqrt{s} = 200$~GeV has been measured by the PHENIX 
+experiment at the Relativistic Heavy Ion Collider over the transverse momentum
+range $0.4 \le p_T \le 5.0$~GeV/$c$ at midrapidity ($|\eta| \le 0.35$). 
+The contribution to the inclusive electron spectrum from semileptonic decays 
+of hadrons carrying heavy flavor, {\it i.e.} charm quarks or, at high $p_T$, 
+bottom quarks, is determined via three independent methods. 
+The resulting electron spectrum from heavy flavor decays is compared to 
+recent leading and next-to-leading order perturbative QCD calculations. 
+The total cross section of charm quark-antiquark pair production is determined 
+as 
+$\sigma_{c\bar{c}} = 0.92 \pm 0.15 {\rm (stat.)} \pm 0.54 {\rm (sys.)}$~mb.
+\end{abstract}
+
+% insert suggested PACS numbers in braces on next line
+\pacs{13.85.Qk, 13.20.Fc, 13.20.He, 25.75.Dw} 
+
+%\maketitle must follow title, authors, abstract, \pacs, and \keywords
+\maketitle
+
+The production of hadrons carrying heavy quarks, {\it i.e.} charm or bottom, 
+serves as a crucial proving ground for quantum chromodynamics (QCD), the 
+theory of the strong interaction. 
+Because of the large quark masses, charm and bottom production can be treated 
+by perturbative QCD (pQCD) even at small momenta without being significantly
+affected by additional soft processes~\cite{mangano93}. 
+This is in distinct contrast to the production of particles composed solely of
+light quarks, which can be evaluated perturbatively only for sufficiently 
+large momenta.
+Consequently, pQCD calculations of heavy quark production are expected to be 
+reliable over the full momentum range experimentally accessible at collider 
+energies.
+
+For bottom production, next-to-leading order (NLO) calculations are in 
+reasonable agreement with data~\cite{cacciari04mangano04}.
+Charm measurements at $\sqrt{s} = 1.96$~TeV exist for high transverse momentum 
+($p_T$) only~\cite{acosta03}, where the cross section is higher than NLO 
+predictions by $\ge 50$\%.
+However, these discrepancies are within the substantial experimental and 
+theoretical uncertainties~\cite{acosta03}.
+At the Relativistic Heavy Ion Collider (RHIC), charm data have been shown for
+$p + p$  and $d + Au$ collisions at 
+$\sqrt{s_{NN}} = 200$~GeV~\cite{star_dau,phenix_dau} as well as for $Au + Au$ 
+collisions at 130 and 200~GeV~\cite{phenix_auau130,phenix_auau200}.
+Further measurements are crucial for a better understanding of heavy flavor 
+production at RHIC. 
+In particular, the relevance of higher order processes and other production 
+mechanisms like jet fragmentation is unclear.
+
+We report on the midrapidity production ($|\eta| \le 0.35$) of inclusive 
+electrons, $(e^+ + e^-)/2$, in $p + p$ collisions at $\sqrt{s} = 200$~GeV 
+measured by the PHENIX experiment~\cite{phenix_nim} at RHIC. 
+Contributions from semileptonic heavy flavor decays are extracted in the 
+electron $p_T$ range $0.4 \le p_T \le 5.0$~GeV/$c$. 
+The resulting invariant differential cross section is an important benchmark 
+for pQCD calculations of heavy quark production. 
+Furthermore, it provides a crucial baseline for measurements in nuclear 
+collisions at RHIC.
+Since hadronic heavy flavor production is expected to be dominated by 
+initial parton scattering, systematic studies in $p + p$ and $d + Au$ 
+collisions should be sensitive to the nucleon parton distribution functions 
+as well as to nuclear modifications of these such as shadowing~\cite{lin96}. 
+In $Au + Au$ collisions, heavy quarks constitute a unique and, with the data 
+presented here, calibrated probe for the created hot and dense medium. 
+Possible medium effects on heavy flavor probes include energy 
+loss~\cite{dokshitzer01,armesto05}, azimuthal asymmetry~\cite{lin03greco04}, 
+and quarkonia suppression~\cite{matsui86} or enhancement~\cite{pbm,thews}.
+
+The data used here were recorded by PHENIX during RHIC Run-2. 
+Beam-beam counters (BBC), positioned at pseudorapidities 
+$3.1 < |\eta| < 3.9$, measured the collision vertex and provided the 
+minimum bias (MB) interaction trigger defined by at least one hit on each side 
+of the vertex. 
+Events containing high $p_T$ electrons were selected by an additional level-1 
+trigger in coincidence with the MB trigger. 
+This level-1 trigger required a minimum energy deposit of 0.75~GeV in a 
+$2 \times 2$ tile of towers in the electromagnetic calorimeter 
+(EMC)~\cite{phenix_pi0pp}. 
+After a vertex cut of $|z_{vtx}| < 20$~cm, an equivalent of 
+$465 \times 10^6$ MB events sampled by the EMC trigger was analyzed in 
+addition to the $15 \times 10^6$ events recorded with the MB trigger itself.
+
+The PHENIX east arm spectrometer ($|\eta| < 0.35$, $\Delta \phi = \pi/2$)
+includes a drift chamber and a pad chamber layer for charged particle 
+tracking. 
+Tracks were confirmed by hits in the EMC matching in position with the 
+track projection within $3\sigma$. 
+Electron candidates required at least two associated hits in the ring imaging 
+\v{C}erenkov detector (RICH) in the projected ring area. 
+Random coincidences of hadron tracks and hits in the RICH occured with a
+probability of $(3.0\pm1.5) \times 10^{-4}$.
+For electrons the energy $E$ deposited in the EMC equals the momentum $p$.
+Requiring $|(E-p)/p| < 3\sigma$, a total charged hadron rejection factor of 
+about 10$^4$ (10$^5$) was achieved for $p_T = 0.4$ $(\ge 2.0)$~GeV/$c$.
+Remaining background ($<1$~\%) was measured via event mixing and subtracted 
+statistically.
+
+The differential cross section for electron production was calculated as
+\begin{equation}
+E \frac{d^3\sigma}{dp^3} = \frac{1}{\epsilon_{bias} \int{{\cal{L}}dt}}
+			   \frac{N_e}{2\pi p_T \Delta y \Delta p_T}
+			   \frac{1}{A \epsilon_{rec}},
+\end{equation}
+where $\int{{\cal{L}}dt}$ is the integrated luminosity measured with the MB 
+trigger or sampled with the EMC trigger, respectively, $\epsilon_{bias}$
+is the probability for an electron event to fulfill the MB trigger condition, 
+$N_e$ is the measured electron yield, and $A \epsilon_{rec}$ is the product of 
+geometrical acceptance and reconstruction efficiency. 
+For the EMC triggered sample, $\epsilon_{rec}$ includes the trigger efficiency
+$\epsilon_{lvl1}$.
+
+$\int{{\cal{L}}dt}$ is calculated as $N_{MB}/\sigma_{BBC}$, where $N_{MB}$ 
+is the number of MB triggers or, for the EMC triggered sample, the number 
+of EMC triggers divided by the measured fraction of MB events which 
+simultaneously fulfill the EMC trigger criterion.
+With the MB trigger cross section 
+$\sigma_{BBC} = 21.8 \pm 2.1$~mb~\cite{phenix_pi0pp}, the analyzed data 
+samples correspond to integrated luminosities of 0.7 nb$^{-1}$ (MB trigger)
+and 21 nb$^{-1}$ (EMC trigger), respectively.
+The $p_T$ independent trigger bias $\epsilon_{bias} = 0.75 \pm 0.02$ was 
+measured for events containing a $\pi^0$ with 
+$p_T > 1.5$~GeV/$c$~\cite{phenix_pi0pp} and confirmed for charged hadrons with
+$p_T > 0.2$~GeV/$c$~\cite{phenix_ppg050}, indicating a universal bias both for 
+hard and soft processes.
+$A \epsilon_{rec}$ was calculated as a function of $p_T$ ($< 10$~\% variation 
+over the full $p_T$ range) in a GEANT~\cite{geant} simulation of electrons 
+with flat distributions in rapidity ($|y| < 0.6$), azimuth ($0 < \phi < 2\pi$),
+and event vertex ($|z| < 30$~cm) as input. 
+The simulated detector response was carefully tuned to match the real detector.
+Rigorous fiducial cuts were applied to eliminate active area mismatches 
+between data and simulation as well as run-by-run variations.
+The trigger efficiency $\epsilon_{lvl1}$, evaluated for single electrons
+in the fiducial area, rises from zero at low $p_T$ to $95 \pm 5$\% for 
+$p_T > 2$~GeV/$c$.
+Finally the effect of finite bin width in $p_T$ was appropriately corrected 
+for.
+
+\begin{figure}[t]
+\includegraphics[width=1.0\linewidth]{Fig_1.eps}
+\caption{\label{fig:PPG037_Fig1} (Color online) Inclusive electron invariant
+differential cross section, measured in $p + p$ collisions at 
+$\sqrt{s} = 200$~GeV, compared with all contributions from electron sources 
+included in the background {\it cocktail} (upper panel). Error bars (boxes) 
+correspond to statistical (systematic) uncertainties. Relative contributions
+of all electron sources to the background {\it cocktail} (lower panel).}
+\end{figure}
+
+The corrected electron spectra from the MB and EMC triggered samples cover 
+$p_T$ ranges of $0.4 < p_T < 2.0$~GeV/$c$ and $0.6 < p_T < 5.0$~GeV/$c$, 
+respectively. 
+They are consistent with each other within the statistical uncertainties 
+in the $p_T$ region of overlap. 
+The weighted average of both measurements is shown in 
+Fig.~\ref{fig:PPG037_Fig1}. 
+
+The systematic uncertainty of the inclusive electron spectrum is about 12\%, 
+almost $p_T$ independent, calculated as the sum in quadrature of contributions 
+from the acceptance calculation (7\%), electron identification cuts (5.2\%), 
+run-by-run variations (4\%), tracking efficiency (3\%), momentum scale 
+(1 - 5\%), and other smaller uncertainties. 
+The value of 12\% does not include the 9.6\% uncertainty of the absolute 
+normalization.
+
+The invariant cross section of electrons from heavy flavor decays was 
+determined by subtracting a {\it cocktail} of contributions from other 
+sources from the inclusive data.
+The most important background is the $\pi^0$ Dalitz decay which was 
+calculated with a hadron decay generator using a parameterization of measured 
+$\pi^0$~\cite{phenix_pi0pp} and $\pi^\pm$~\cite{phenix_pichargepp} spectra 
+as input. 
+The spectral shapes of other light hadrons $h$ were obtained from the pion 
+spectra by $m_T$ scaling. 
+Within this approach the ratios $h/\pi^0$ are constant at high $p_T$ and for 
+the relative normalization we used: 
+$\eta/\pi^0 = 0.45 \pm 0.10$~\cite{phenix_ppg051}, $\rho/\pi^0 = 1.0 \pm 0.3$, 
+$\omega/\pi^0 = 1.0 \pm 0.3$, $\eta'/\pi^0 = 0.25 \pm 0.08$, and 
+$\phi/\pi^0 = 0.40 \pm 0.12$. 
+Only the $\eta$ contribution is of any practical relevance. 
+Another major electron source is the conversion of photons, mainly from 
+$\pi^0 \rightarrow \gamma\gamma$ decays, in material in the acceptance. 
+The spectra of electrons from conversions and Dalitz decays are very 
+similar.
+In a GEANT simulation of $\pi^0$ decays, the ratio of electrons from 
+conversions to electrons from Dalitz decays was determined as 
+$0.73 \pm 0.07$, essentially $p_T$ independent. 
+Contributions from photon conversions from other sources were taken 
+into account as well. 
+In addition, electrons from kaon decays ($K_{e3}$), determined in a GEANT 
+simulation based on measured kaon spectra~\cite{phenix_pichargepp}, and 
+electrons from external as well as internal conversions of direct 
+photons~\cite{vogelsang,phenix_directgammapp} were considered in the cocktail.
+All background sources are compared with the inclusive data in the upper panel 
+of Fig.~\ref{fig:PPG037_Fig1} with the relative contributions shown in the 
+lower panel. 
+The total systematic uncertainty of the cocktail is about 12\%, essentially 
+$p_T$ independent. 
+This uncertainty is dominated by the systematic error of the pion 
+parameterization ($\approx 10$\%). 
+Other systematic uncertainties, mainly the $\eta/\pi^0$ normalization and, 
+at high $p_T$, the contribution from direct radiation, are much smaller.
+
+\begin{figure}[t]
+\includegraphics[width=1.0\linewidth]{Fig_2.eps}
+\caption {\label{fig:PPG037_Fig2} Ratio of electrons from heavy flavor decays 
+(non-photonic) and other sources (photonic) , $R_{NP}$, for three 
+independent analysis methods. Error bars (boxes) are statistical 
+({\it cocktail} systematic) uncertainties.}
+\end{figure}
+
+Given the small amount of material in the acceptance 
+(Be beam pipe: 0.29~\% $X_0$; air: 0.28~\% $X_0$) the ratio $R_{NP}$ of 
+non-photonic electrons from heavy flavor decays to background from photonic 
+sources is large ($R_{NP} > 1$ for $p_T > 1.5$~GeV/$c$) as shown in
+Fig.~\ref{fig:PPG037_Fig2}.
+Two complementary analysis methods confirm the {\it cocktail} result:
+
+The {\it converter} technique~\cite{phenix_auau200} compares 
+electron spectra measured with an additional photon converter 
+$X_{C} = 1.67$~\% $X_0$ introduced into the acceptance to measurements 
+without converter. 
+The converter increases the contribution from conversions and Dalitz 
+decays by a fixed factor, which was determined precisely via GEANT 
+simulations. 
+Thus, the electron spectra from photonic and non-photonic sources can be 
+deduced (Fig.~\ref{fig:PPG037_Fig2}). 
+The drawbacks of the {\it converter} method are the limitation in statistics 
+of the converter run period and the fact that the photonic contribution is 
+small at high $p_T$.
+
+The {\it $e\gamma$ coincidence} technique evaluates the correlation of
+electrons and photons via their invariant mass. 
+Electrons from $\pi^0$ Dalitz decays or the conversion of one of the photons
+from $\pi^0 \rightarrow \gamma\gamma$ decays are correlated with a photon, in 
+contrast to electrons from semileptonic heavy flavor decays.
+Comparing the measured $e\gamma$ coincidence rate with the simulated rate
+for single $\pi^0$ events, allows to deduce $R_{NP}$ as shown in 
+Fig.~\ref{fig:PPG037_Fig2}, once corrections for contributions from other 
+photonic sources are applied. 
+
+After subtracting the background cocktail from the inclusive electron 
+spectrum the invariant differential cross section of electrons from 
+heavy flavor decays is shown in Fig.~\ref{fig:PPG037_Fig3} compared with 
+two theoretical predictions. 
+A leading order (LO) PYTHIA calculation, tuned to existing charm and bottom 
+hadroproduction measurements~\cite{pythia_tuned}, is in reasonable agreement 
+with the data for $p_T < 1.5$~GeV/$c$, but underestimates the cross section 
+at higher $p_T$. 
+It is important to note that this calculation includes a scale factor $K = 3.5$
+to accomodate for neglected NLO contributions. 
+A {\it Fixed-Order plus Next-to-Leading-Log} (FONLL) pQCD 
+calculation~\cite{cacciari05} still leaves room for further contributions 
+beyond the included NLO processes.
+The predicted contribution from bottom decays is irrelevant for the
+electron cross section at $p_T < 3$~GeV/$c$ and becomes significant only for 
+$p_T > 4$~GeV/$c$.
+
+\begin{figure}[t]
+\includegraphics[width=1.0\linewidth]{Fig_3.eps}
+\caption {\label{fig:PPG037_Fig3} Invariant differential cross section of 
+electrons from heavy flavor decays compared with PYTHIA LO (with $K = 3.5$) 
+and FONLL pQCD calculations (upper panel). Error bars (brackets) show 
+statistical (systematic) uncertainties. For the FONLL calculation contributions
+from charm and bottom decays are shown separately. Ratio of data and FONLL
+calculation (lower panel) with experimental statistical (error bars) and
+systematic (brackets) uncertainties as well as the theoretical uncertainty
+(grey band). The solid line corresponds to the ratio of PYTHIA and FONLL.}
+\end{figure}
+
+The charm production cross section was derived from the integrated electron
+cross section for $p_{T} > p_{T,low} = 0.6 (0.8)$~GeV/$c$
+($d\sigma_{e}^{p_{T,low}}/dy = 4.78 (2.15) \pm 0.78 (0.46) {\rm (stat.)} 
+\pm 1.74 (0.68) {\rm (sys.)}$~$\times 10^{-3}$~mb).
+Since in the low $p_T$ region, which dominates the total cross section, PYTHIA
+describes the measured spectrum reasonably well, the total charm cross section 
+was determined by extrapolating the properly scaled PYTHIA spectrum to 
+$p_T = 0$~GeV/$c$. 
+First the PYTHIA spectra for electrons from charm and bottom decays were fit 
+to the data for $p_T > 0.6$~GeV/$c$, with only the normalizations as free 
+parameters. 
+The resulting midrapidity charm production cross section was determined as 
+$d\sigma_{c\bar{c}}/dy = 0.20 \pm 0.03 {\rm (stat.)} \pm 0.11 {\rm (sys.)}$~mb,
+where the systematic error is dominated by the uncertainty of the electron 
+spectrum itself ($\approx$56\%), evaluated by refitting PYTHIA to the
+data at the minimum and maximum of the 1$\sigma$ systematic error band. 
+Additional uncertainties from the relative ratios of different charmed hadron 
+species and their branching ratios into electrons ($\approx$9\%) and the 
+variation of the PYTHIA spectral shape ($\approx$11\%)~\cite{phenix_auau200} 
+were added in quadrature.
+The rapidity integrated cross section was determined as
+$\sigma_{c\bar{c}} = 0.92 \pm 0.15 {\rm (stat.)} \pm 0.54 {\rm (sys.)}$~mb,
+where various parton distribution functions (GRV98LO and MRST(c-g)~\cite{pdf} 
+in addition to the default CTEQ5L~\cite{cteq5l}) were used for the 
+extrapolation, with an associated extra systematic error of 
+$\approx$6\%~\cite{phenix_auau200} added in quadrature.
+
+Within errors the integrated charm cross section is compatible with data from 
+$Au + Au$ collisions~\cite{phenix_auau200} (minimum bias value: 
+$0.622 \pm 0.057 \pm 0.160$~mb per $NN$ collision) and from $d + Au$ 
+collisions~\cite{star_dau} ($1.3 \pm 0.2 \pm 0.4$~mb) at the same 
+$\sqrt{s_{NN}} = 200$~GeV. 
+The FONLL cross section is smaller 
+($\sigma_{c\bar{c}}^{FONLL} = 0.256^{+0.400}_{-0.146}$~mb) but it is still 
+compatible with the data. 
+Our measurement does not allow to deduce a bottom cross section, which is 
+predicted by FONLL as 
+$\sigma_{b\bar{b}}^{FONLL} = 1.87^{+0.99}_{-0.67}$~$\mu$b.
+
+In conclusion, we have measured single electrons from heavy flavor decays
+in $p + p$ collisions at $\sqrt{s} = 200$~GeV. 
+These data provide a crucial benchmark for pQCD heavy quark calculations. 
+We observe that above $p_T \approx 2$~GeV/$c$ the electron spectrum is 
+significantly harder than predicted by a LO PYTHIA charm and bottom 
+calculation. 
+Contributions to the charm production cross section in excess of the considered
+FONLL calculation, {\it e.g.} from jet fragmentation, can not be excluded.
+The new data reported here provide an important baseline
+for the study of medium effects on heavy quark production at RHIC.
+
+%\section{Acknowledgements}   % Run-2 short form for PRL
+
+We thank the staff of the Collider-Accelerator and Physics
+Departments at BNL for their vital contributions.  We acknowledge
+support from the Department of Energy and NSF (U.S.A.), 
+MEXT and JSPS (Japan), CNPq and FAPESP (Brazil), NSFC (China), 
+CNRS-IN2P3 and CEA (France), 
+BMBF, DAAD, and AvH (Germany), 
+OTKA (Hungary), DAE and DST (India), ISF (Israel), 
+KRF and CHEP (Korea), RMIST, RAS, and RMAE (Russia), 
+VR and KAW (Sweden), U.S. CRDF for the FSU, 
+US-Hungarian NSF-OTKA-MTA, and US-Israel BSF.
+
+\def\IJMPA{{Int. J. Mod. Phys.}~{\bf A}}
+\def\JPG{{J. Phys}~{\bf G}}
+\def\NCA{Nuovo Cimento}
+\def\NIM{Nucl. Instrum. Methods}
+\def\NIMA{{Nucl. Instrum. Methods}~{\bf A}}
+\def\NPA{{Nucl. Phys.}~{\bf A}}
+\def\NPB{{Nucl. Phys.}~{\bf B}}
+\def\PLB{Phys. Lett. B}
+\def\PLC{Phys. Repts.\ }
+\def\PRL{Phys. Rev. Lett.\ }
+\def\PRD{Phys. Rev. D}
+\def\PRC{Phys. Rev. C}
+\def\ZPC{{Z. Phys.}~{\bf C}}
+\def\etal{{\it et al.} }
+
+\begin{references}
+\bibitem{mangano93} 
+  M.L. Mangano \etal, \NPB {\bf 405}, 507 (1993).
+\bibitem{cacciari04mangano04}
+  M. Cacciari, hep-ph/0407187; 
+  M.L. Mangano, hep-ph/0411020.
+\bibitem{acosta03}
+  D. Acosta \etal, \PRL {\bf 91}, 241804 (2003).
+\bibitem{star_dau}
+  J. Adams \etal, \PRL {\bf 94} 062301 (2005).
+\bibitem{phenix_dau}
+  S. Kelly \etal, \JPG {\bf 30}, S1189 (2004).
+\bibitem{phenix_auau130}
+  K. Adcox \etal, \PRL {\bf 88}, 192303 (2002).
+\bibitem{phenix_auau200}
+  S.S. Adler \etal, \PRL {\bf 94}, 082301 (2005).
+\bibitem{phenix_nim}
+  K. Adcox \etal, \NIMA {\bf 499}, 469 (2003).  
+\bibitem{lin96}
+  Z. Lin and M. Gyulassy, \PRL {\bf 77}, 1222 (1996).
+\bibitem{dokshitzer01}
+  Y.L. Dokshitzer and D.E. Kharzeev, \PLB {\bf 519}, 199 (2001).
+\bibitem{armesto05}
+  N. Armesto, A. Dainese, C.A. Salgado, and U.A. Wiedemann
+  \PRD {\bf 71}, 054027 (2005).
+\bibitem{lin03greco04}
+  Z.W. Lin and D. Molnar, \PRC {\bf 68}, 044901 (2003);
+  V. Greco, C.M. Ko, and R. Rapp, \PLB {\bf 595}, 202 (2004).
+\bibitem{matsui86}
+  T. Matsui and H. Satz, \PLB {\bf 178}, 416 (1986).
+\bibitem{pbm}
+  P. Braun-Munzinger and J. Stachel, \PLB {\bf 490}, 196 (2000).
+\bibitem{thews}
+  R.L. Thews, M. Schroedter, and J. Rafelski, \PRC {\bf 63}, 054905 (2001).
+\bibitem{phenix_pi0pp}
+  S.S. Adler \etal, \PRL {\bf 91}, 241803 (2003).
+\bibitem{phenix_ppg050}
+  S.S. Adler \etal, submitted for publication in \PRL, hep-ex/0507073.
+\bibitem{geant}
+  GEANT 3.21, CERN program library.
+\bibitem{phenix_pichargepp}
+  F. Matathias \etal, \JPG {\bf 30}, S1113 (2004).
+\bibitem{phenix_ppg051}
+  S.S. Adler \etal, in preparation.
+\bibitem{vogelsang}
+  L.E. Gordon and W. Vogelsang, \PRD {\bf 50}, 1901 (1994).
+\bibitem{phenix_directgammapp}
+  S.S. Adler \etal, \PRD {\bf 71}, 071102(R) (2005).
+\bibitem{pythia_tuned}
+  We used PYTHIA 6.205 with a modified set of parameters~\cite{phenix_auau130} 
+  and CTEQ5L parton distribution functions~\cite{cteq5l}.
+\bibitem{cteq5l}
+  H.H. Lai \etal, Eur. Phys. J. {\bf C 12}, 375 (2000).
+\bibitem{cacciari05}
+  M. Cacciari, P. Nason, and R. Vogt, hep-ph/0502203.
+\bibitem{pdf}
+  M. Gl\"uck, E. Reya, and A. Vogt, Eur. Phys. J. {\bf C 5}, 461 (1998);
+  A.D. Martin, R.G Roberts, W.J. Stirling, and R.S. Thorne, 
+  Eur. Phys. J. {\bf C 4}, 463 (1998).
+\end{references}
+
+\end{document}
+
+%
+% ****** End of file template4.tex ******
