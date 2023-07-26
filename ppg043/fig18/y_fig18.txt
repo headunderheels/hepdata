@@ -1,0 +1,24 @@
+$p_T$
+7
+$v_2$
+$v_2$
+$v_2$
+$v_2$
+$v_2$
+$v_2$
+$v_2$
+Centrality A (placeholder)
+Centrality B (placeholder)
+Centrality C (placeholder)
+Centrality D (placeholder)
+Centrality E (placeholder)
+Centrality F (placeholder)
+Centrality G (placeholder)
+yes
+none
+none
+2
+stat.
+symmetric
+sys.
+asymmetric

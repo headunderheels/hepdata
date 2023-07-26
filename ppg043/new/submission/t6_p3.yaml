@@ -1,0 +1,64 @@
+independent_variables:
+- header: {name: '$\eta$'}
+  values:
+  - {low: -0.35, high: -0.30}
+  - {low: -0.30, high: -0.25}
+  - {low: -0.25, high: -0.20}
+  - {low: -0.20, high: -0.15}
+  - {low: -0.15, high: -0.10}
+  - {low: -0.10, high: -0.05}
+  - {low: -0.05, high: 0.00}
+  - {low: 0.00, high: 0.05}
+  - {low: 0.05, high: 0.10}
+  - {low: 0.10, high: 0.15}
+  - {low: 0.15, high: 0.20}
+  - {low: 0.20, high: 0.25}
+  - {low: 0.25, high: 0.30}
+  - {low: 0.30, high: 0.35}
+dependent_variables:
+- header: {name: '$v_2$'}
+  qualifiers:
+  - {name: '$\eta$', value: '$p_T = 2.0 - 3.0 \mathrm{GeV}/c$'}
+  values:
+  - value: 0.1965
+    errors:
+    - {symerror: 0.0026, label: 'errv2'}
+  - value: 0.1972
+    errors:
+    - {symerror: 0.0021, label: 'errv2'}
+  - value: 0.1944
+    errors:
+    - {symerror: 0.0019, label: 'errv2'}
+  - value: 0.1929
+    errors:
+    - {symerror: 0.0018, label: 'errv2'}
+  - value: 0.1987
+    errors:
+    - {symerror: 0.0018, label: 'errv2'}
+  - value: 0.1992
+    errors:
+    - {symerror: 0.0019, label: 'errv2'}
+  - value: 0.1968
+    errors:
+    - {symerror: 0.0021, label: 'errv2'}
+  - value: 0.1973
+    errors:
+    - {symerror: 0.0021, label: 'errv2'}
+  - value: 0.1933
+    errors:
+    - {symerror: 0.0020, label: 'errv2'}
+  - value: 0.1997
+    errors:
+    - {symerror: 0.0019, label: 'errv2'}
+  - value: 0.1939
+    errors:
+    - {symerror: 0.0019, label: 'errv2'}
+  - value: 0.1953
+    errors:
+    - {symerror: 0.0020, label: 'errv2'}
+  - value: 0.1958
+    errors:
+    - {symerror: 0.0022, label: 'errv2'}
+  - value: 0.1951
+    errors:
+    - {symerror: 0.0028, label: 'errv2'}

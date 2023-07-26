@@ -1,0 +1,103 @@
+independent_variables:
+- header: {name: '$p_T$'}
+  values:
+  - {low: 0.200, high: 0.300}
+  - {low: 0.300, high: 0.400}
+  - {low: 0.400, high: 0.500}
+  - {low: 0.500, high: 0.600}
+  - {low: 0.600, high: 0.700}
+  - {low: 0.700, high: 0.800}
+  - {low: 0.800, high: 0.900}
+  - {low: 0.900, high: 1.000}
+  - {low: 1.000, high: 1.200}
+  - {low: 1.200, high: 1.400}
+  - {low: 1.400, high: 1.600}
+  - {low: 1.600, high: 1.800}
+  - {low: 1.800, high: 2.000}
+  - {low: 2.000, high: 2.400}
+  - {low: 2.400, high: 3.000}
+  - {low: 3.000, high: 3.700}
+  - {low: 3.700, high: 5.000}
+  - {low: 5.000, high: 6.500}
+  - {low: 6.500, high: 8.500}
+dependent_variables:
+- header: {name: '$v_2$'}
+  qualifiers:
+  - {name: '$p_T$', value: '$20-30\%$'}
+  values:
+  - value: 0.01127
+    errors:
+    - {symerror: 2e-4, label: 'stat.'}
+    - {asymerror: {plus: 0.0016, minus: 0.0016}, label: 'sys.'}
+  - value: 0.03713
+    errors:
+    - {symerror: 0.000, label: 'stat.'}
+    - {asymerror: {plus: 0.005, minus: 0.005}, label: 'sys.'}
+  - value: 0.05370
+    errors:
+    - {symerror: 0.000, label: 'stat.'}
+    - {asymerror: {plus: 0.007, minus: 0.007}, label: 'sys.'}
+  - value: 0.06252
+    errors:
+    - {symerror: 0.000, label: 'stat.'}
+    - {asymerror: {plus: 0.009, minus: 0.009}, label: 'sys.'}
+  - value: 0.07147
+    errors:
+    - {symerror: 0.000, label: 'stat.'}
+    - {asymerror: {plus: 0.010, minus: 0.010}, label: 'sys.'}
+  - value: 0.08144
+    errors:
+    - {symerror: 0.000, label: 'stat.'}
+    - {asymerror: {plus: 0.011, minus: 0.011}, label: 'sys.'}
+  - value: 0.09118
+    errors:
+    - {symerror: 0.000, label: 'stat.'}
+    - {asymerror: {plus: 0.013, minus: 0.013}, label: 'sys.'}
+  - value: 0.10071
+    errors:
+    - {symerror: 0.001, label: 'stat.'}
+    - {asymerror: {plus: 0.014, minus: 0.014}, label: 'sys.'}
+  - value: 0.11227
+    errors:
+    - {symerror: 0.000, label: 'stat.'}
+    - {asymerror: {plus: 0.015, minus: 0.015}, label: 'sys.'}
+  - value: 0.12982
+    errors:
+    - {symerror: 0.001, label: 'stat.'}
+    - {asymerror: {plus: 0.018, minus: 0.018}, label: 'sys.'}
+  - value: 0.14786
+    errors:
+    - {symerror: 0.001, label: 'stat.'}
+    - {asymerror: {plus: 0.020, minus: 0.020}, label: 'sys.'}
+  - value: 0.16113
+    errors:
+    - {symerror: 0.001, label: 'stat.'}
+    - {asymerror: {plus: 0.022, minus: 0.022}, label: 'sys.'}
+  - value: 0.17515
+    errors:
+    - {symerror: 0.001, label: 'stat.'}
+    - {asymerror: {plus: 0.024, minus: 0.024}, label: 'sys.'}
+  - value: 0.19364
+    errors:
+    - {symerror: 0.001, label: 'stat.'}
+    - {asymerror: {plus: 0.027, minus: 0.027}, label: 'sys.'}
+  - value: 0.20931
+    errors:
+    - {symerror: 0.003, label: 'stat.'}
+    - {asymerror: {plus: 0.029, minus: 0.029}, label: 'sys.'}
+  - value: 0.20299
+    errors:
+    - {symerror: 0.004, label: 'stat.'}
+    - {asymerror: {plus: 0.028, minus: 0.028}, label: 'sys.'}
+  - value: 0.19729
+    errors:
+    - {symerror: 0.012, label: 'stat.'}
+    - {asymerror: {plus: 0.027, minus: 0.027}, label: 'sys.'}
+  - value: 0.18635
+    errors:
+    - {symerror: 0.026, label: 'stat.'}
+    - {asymerror: {plus: 0.026, minus: 0.026}, label: 'sys.'}
+  - value: 0.15079
+    errors:
+    - {symerror: 0.048, label: 'stat.'}
+    - {asymerror: {plus: 0.021, minus: 0.021}, label: 'sys.'}

@@ -1,0 +1,93 @@
+independent_variables:
+- header: {name: '$p_T$'}
+  values:
+  - {low: 0.200, high: 0.300}
+  - {low: 0.300, high: 0.400}
+  - {low: 0.400, high: 0.500}
+  - {low: 0.500, high: 0.600}
+  - {low: 0.600, high: 0.700}
+  - {low: 0.700, high: 0.800}
+  - {low: 0.800, high: 0.900}
+  - {low: 0.900, high: 1.000}
+  - {low: 1.000, high: 1.200}
+  - {low: 1.200, high: 1.400}
+  - {low: 1.400, high: 1.600}
+  - {low: 1.600, high: 1.800}
+  - {low: 1.800, high: 2.000}
+  - {low: 2.000, high: 2.400}
+  - {low: 2.400, high: 3.000}
+  - {low: 3.000, high: 3.700}
+  - {low: 3.700, high: 5.000}
+dependent_variables:
+- header: {name: '$v_2$'}
+  qualifiers:
+  - {name: '$p_T$', value: '$50-60\%$'}
+  values:
+  - value: 0.02164
+    errors:
+    - {symerror: 0.001, label: 'stat.'}
+    - {asymerror: {plus: 0.016, minus: 0.016}, label: 'sys.'}
+  - value: 0.03766
+    errors:
+    - {symerror: 8e-4, label: 'stat.'}
+    - {asymerror: {plus: 0.0034, minus: 0.0034}, label: 'sys.'}
+  - value: 0.05159
+    errors:
+    - {symerror: 9e-4, label: 'stat.'}
+    - {asymerror: {plus: 0.0024, minus: 0.0024}, label: 'sys.'}
+  - value: 0.06277
+    errors:
+    - {symerror: 0.0010, label: 'stat.'}
+    - {asymerror: {plus: 0.0016, minus: 0.0016}, label: 'sys.'}
+  - value: 0.07471
+    errors:
+    - {symerror: 0.0011, label: 'stat.'}
+    - {asymerror: {plus: 0.0013, minus: 0.0013}, label: 'sys.'}
+  - value: 0.08320
+    errors:
+    - {symerror: 0.0013, label: 'stat.'}
+    - {asymerror: {plus: 0.0012, minus: 0.0012}, label: 'sys.'}
+  - value: 0.09675
+    errors:
+    - {symerror: 0.0014, label: 'stat.'}
+    - {asymerror: {plus: 0.0017, minus: 0.0017}, label: 'sys.'}
+  - value: 0.10720
+    errors:
+    - {symerror: 0.0016, label: 'stat.'}
+    - {asymerror: {plus: 0.0012, minus: 0.0012}, label: 'sys.'}
+  - value: 0.11901
+    errors:
+    - {symerror: 0.0015, label: 'stat.'}
+    - {asymerror: {plus: 0.0014, minus: 0.0014}, label: 'sys.'}
+  - value: 0.12717
+    errors:
+    - {symerror: 0.0018, label: 'stat.'}
+    - {asymerror: {plus: 0.0016, minus: 0.0016}, label: 'sys.'}
+  - value: 0.14188
+    errors:
+    - {symerror: 0.0024, label: 'stat.'}
+    - {asymerror: {plus: 0.0021, minus: 0.0021}, label: 'sys.'}
+  - value: 0.15811
+    errors:
+    - {symerror: 0.0033, label: 'stat.'}
+    - {asymerror: {plus: 0.0024, minus: 0.0024}, label: 'sys.'}
+  - value: 0.15997
+    errors:
+    - {symerror: 0.0044, label: 'stat.'}
+    - {asymerror: {plus: 0.0030, minus: 0.0030}, label: 'sys.'}
+  - value: 0.16724
+    errors:
+    - {symerror: 0.0043, label: 'stat.'}
+    - {asymerror: {plus: 0.0031, minus: 0.0031}, label: 'sys.'}
+  - value: 0.18027
+    errors:
+    - {symerror: 0.008, label: 'stat.'}
+    - {asymerror: {plus: 0.004, minus: 0.004}, label: 'sys.'}
+  - value: 0.13888
+    errors:
+    - {symerror: 0.0114, label: 'stat.'}
+    - {asymerror: {plus: 0.0033, minus: 0.0033}, label: 'sys.'}
+  - value: 0.12204
+    errors:
+    - {symerror: 0.029, label: 'stat.'}
+    - {asymerror: {plus: 0.017, minus: 0.017}, label: 'sys.'}
