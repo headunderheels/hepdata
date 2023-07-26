@@ -1,0 +1,29 @@
+$p_{T,\ assoc}\ \mathrm{GeV}/c$
+3
+ZYAM sbtr. CY(baryon)/CY(meson)
+ZYAM sbtr. CY(baryon)/CY(meson)
+ZYAM sbtr. CY(baryon)/CY(meson)
+0-20%
+20-40%
+70-90%
+no
+none
+none
+1
+ErroronRatio
+symmetric
+0.89 0.015 0.004
+1.13 0.050 0.005
+1.43 0.108 0.008
+1.76 0.204 0.009
+***
+0.89 0.016 0.004
+1.13 0.059 0.006
+1.43 0.105 0.007
+1.76 0.165 0.008
+***
+0.89 0.040 0.020
+1.13 0.027 0.008
+1.43 0.073 0.013
+1.76 0.095 0.013
+***
